@@ -152,7 +152,7 @@ def pl_resolve(PKB):
 
             for j in literal_map[nvalue]:
                 resolved = resolve(l1, j)
-                if que.qsize() > 100000:
+                if que.qsize() > 100001:
                     return True
                 if resolved == False:
                     return False
